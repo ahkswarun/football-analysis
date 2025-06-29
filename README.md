@@ -39,6 +39,7 @@ Running the Code
 Make sure:
 
 ✅ Your input video is placed in the input/ directory as input.mp4
+
 ✅ Your trained YOLO model (best.pt) is placed in the models/ directory
 
 
