@@ -14,7 +14,7 @@ class Tracker:
         self.model = YOLO(model_path) 
         self.tracker = sv.ByteTrack()
 
-    #stay
+
     def detect_frames(self, frames):
         batch_size=20 
         detections = [] 
@@ -23,7 +23,7 @@ class Tracker:
             detections += detections_batch
         return detections
         
-    #stay
+
     def get_object_tracks(self, frames, read_from_stub=False, stub_path=None):
         
         if read_from_stub and stub_path is not None and os.path.exists(stub_path):
@@ -82,7 +82,7 @@ class Tracker:
 
         return tracks
     
-    #stay
+    
     def draw_ellipse(self,frame,bbox,color,track_id=None):
         y2 = int(bbox[3])
         x_center, _ = get_center_of_bbox(bbox)
